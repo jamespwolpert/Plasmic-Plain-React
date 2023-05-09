@@ -1,0 +1,125 @@
+.root {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: #000000;
+  overflow: hidden;
+  grid-column-start: 1;
+  grid-column-end: -1;
+  min-height: 0;
+}
+.freeBox__u91T {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  overflow: visible;
+  align-self: flex-start;
+  flex-wrap: nowrap;
+  align-content: stretch;
+  min-width: 0;
+  padding: 40px 0px;
+  border-top: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
+}
+.text__tAfcw {
+  position: relative;
+  width: auto;
+  height: auto;
+  max-width: none;
+  color: #ffffff;
+  font-size: 66px;
+  line-height: 1;
+  flex-shrink: 0;
+  flex-grow: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: none;
+  left: auto;
+  top: auto;
+  padding-bottom: 0px;
+  -webkit-transition-property: all;
+  -webkit-transition-duration: 1s;
+}
+.freeBox__nH0VG {
+  display: flex;
+  position: relative;
+  flex-direction: row;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  flex-grow: 1;
+  flex-shrink: 0;
+  margin-top: 0px;
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+}
+.freeBox__f8Gl1 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  align-self: center;
+  min-width: 0;
+  padding: 8px;
+}
+.freeBox__paSVb {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 100%;
+  min-width: 0;
+  min-height: 0;
+  padding: 30px 8px 8px 30px;
+}
+.text__kfaJ2 {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  color: #ffffff;
+  font-size: 90px;
+  line-height: 1;
+  margin-bottom: 40px;
+  font-weight: 500;
+  min-width: 0;
+}
+.text__nmNn {
+  position: relative;
+  width: 100%;
+  height: auto;
+  max-width: 40%;
+  color: #ffffff;
+  opacity: 0.64;
+  min-width: 0;
+}
+.freeBox__mF9OK {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  transform: translateX(0px) translateY(0px) translateZ(0px);
+  min-width: 0;
+  padding: 8px;
+}
