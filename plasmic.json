@@ -49,19 +49,6 @@
       "cssFilePath": "plasmic/plasmic_test/plasmic_plasmic_test.module.css",
       "components": [
         {
-          "id": "w31qG2VLtz2_",
-          "name": "Homepage",
-          "type": "managed",
-          "projectId": "itmdg5kTwTPM7Z7CWx2NER",
-          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicHomepage.tsx",
-          "importSpec": {
-            "modulePath": "Homepage.tsx"
-          },
-          "cssFilePath": "plasmic/plasmic_test/PlasmicHomepage.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
-        },
-        {
           "id": "bWoJdglL_8",
           "name": "BomBomItes",
           "type": "managed",
@@ -73,19 +60,6 @@
           "cssFilePath": "plasmic/plasmic_test/PlasmicBomBomItes.module.css",
           "scheme": "blackbox",
           "componentType": "component"
-        },
-        {
-          "id": "MVqNXujA31",
-          "name": "About",
-          "type": "managed",
-          "projectId": "itmdg5kTwTPM7Z7CWx2NER",
-          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicAbout.tsx",
-          "importSpec": {
-            "modulePath": "About.tsx"
-          },
-          "cssFilePath": "plasmic/plasmic_test/PlasmicAbout.module.css",
-          "scheme": "blackbox",
-          "componentType": "page"
         },
         {
           "id": "Mo_a8cHyb5",
@@ -112,6 +86,32 @@
           "cssFilePath": "plasmic/plasmic_test/PlasmicHeroSection.module.css",
           "scheme": "blackbox",
           "componentType": "component"
+        },
+        {
+          "id": "w31qG2VLtz2_",
+          "name": "AnotherPage",
+          "type": "managed",
+          "projectId": "itmdg5kTwTPM7Z7CWx2NER",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicAnotherPage.tsx",
+          "importSpec": {
+            "modulePath": "AnotherPage.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicAnotherPage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
+        },
+        {
+          "id": "MVqNXujA31",
+          "name": "Homepage",
+          "type": "managed",
+          "projectId": "itmdg5kTwTPM7Z7CWx2NER",
+          "renderModuleFilePath": "plasmic/plasmic_test/PlasmicHomepage.tsx",
+          "importSpec": {
+            "modulePath": "Homepage.tsx"
+          },
+          "cssFilePath": "plasmic/plasmic_test/PlasmicHomepage.module.css",
+          "scheme": "blackbox",
+          "componentType": "page"
         }
       ],
       "icons": [

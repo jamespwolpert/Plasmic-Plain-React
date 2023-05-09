@@ -2,9 +2,9 @@
 // This file is owned by you, feel free to edit as you see fit.
 import * as React from "react";
 import {
-  PlasmicHomepage,
-  DefaultHomepageProps
-} from "./plasmic/plasmic_test/PlasmicHomepage";
+  PlasmicAnotherPage,
+  DefaultAnotherPageProps
+} from "./plasmic/plasmic_test/PlasmicAnotherPage";
 import { HTMLElementRefOf } from "@plasmicapp/react-web";
 
 // Your component props start with props for variants and slots you defined
@@ -14,32 +14,32 @@ import { HTMLElementRefOf } from "@plasmicapp/react-web";
 // If you don't want to expose certain variants or slots as a prop, you can use
 // Omit to hide them:
 //
-// interface HomepageProps extends Omit<DefaultHomepageProps, "hideProps1"|"hideProp2"> {
+// interface AnotherPageProps extends Omit<DefaultAnotherPageProps, "hideProps1"|"hideProp2"> {
 //   // etc.
 // }
 //
-// You can also stop extending from DefaultHomepageProps altogether and have
+// You can also stop extending from DefaultAnotherPageProps altogether and have
 // total control over the props for your component.
-export interface HomepageProps extends DefaultHomepageProps {}
+export interface AnotherPageProps extends DefaultAnotherPageProps {}
 
-function Homepage_(props: HomepageProps, ref: HTMLElementRefOf<"div">) {
-  // Use PlasmicHomepage to render this component as it was
+function AnotherPage_(props: AnotherPageProps, ref: HTMLElementRefOf<"div">) {
+  // Use PlasmicAnotherPage to render this component as it was
   // designed in Plasmic, by activating the appropriate variants,
   // attaching the appropriate event handlers, etc.  You
   // can also install whatever React hooks you need here to manage state or
   // fetch data.
   //
-  // Props you can pass into PlasmicHomepage are:
+  // Props you can pass into PlasmicAnotherPage are:
   // 1. Variants you want to activate,
   // 2. Contents for slots you want to fill,
   // 3. Overrides for any named node in the component to attach behavior and data,
   // 4. Props to set on the root node.
   //
-  // By default, we are just piping all HomepageProps here, but feel free
+  // By default, we are just piping all AnotherPageProps here, but feel free
   // to do whatever works for you.
 
-  return <PlasmicHomepage about={{ ref }} {...props} />;
+  return <PlasmicAnotherPage root={{ ref }} {...props} />;
 }
 
-const Homepage = React.forwardRef(Homepage_);
-export default Homepage;
+const AnotherPage = React.forwardRef(AnotherPage_);
+export default AnotherPage;
