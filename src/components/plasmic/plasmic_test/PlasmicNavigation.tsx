@@ -133,7 +133,7 @@ function PlasmicNavigation__RenderFunc(props: {
             sty.link___3Ft5W,
             "link about" as const
           )}
-          href={`/about`}
+          href={`/home`}
           target={"_blank" as const}
         >
           <div
