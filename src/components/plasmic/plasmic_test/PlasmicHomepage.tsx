@@ -34,6 +34,7 @@ import {
 } from "@plasmicapp/react-web";
 import Navigation from "../../Navigation"; // plasmic-import: Mo_a8cHyb5/component
 import BomBomItes from "../../BomBomItes"; // plasmic-import: bWoJdglL_8/component
+import { Embed } from "@plasmicpkgs/plasmic-basic-components"; // plasmic-import: PKldDYkH42/codeComponent
 import HeroSection from "../../HeroSection"; // plasmic-import: K-4pGAICOD/component
 
 import "@plasmicapp/react-web/lib/plasmic.css";
@@ -54,6 +55,7 @@ export type PlasmicHomepage__OverridesType = {
   about?: p.Flex<"div">;
   navigation?: p.Flex<typeof Navigation>;
   bomBomItes?: p.Flex<typeof BomBomItes>;
+  embedHtml?: p.Flex<typeof Embed>;
   heroSection?: p.Flex<typeof HeroSection>;
 };
 
@@ -87,6 +89,7 @@ function PlasmicHomepage__RenderFunc(props: {
   const $refs = refsRef.current;
 
   const currentUser = p.useCurrentUser?.() || {};
+
   const [$queries, setDollarQueries] = React.useState({});
 
   return (
@@ -118,6 +121,15 @@ function PlasmicHomepage__RenderFunc(props: {
             className={classNames("__wab_instance", sty.bomBomItes)}
           />
 
+          <Embed
+            data-plasmic-name={"embedHtml"}
+            data-plasmic-override={overrides.embedHtml}
+            className={classNames("__wab_instance", sty.embedHtml)}
+            code={
+              '<button onclick="testFunc()" class="testing-button">Button</button>\n\n<script type="text/javascript">\nconsole.log("Henlo wurld, it is I, James");\n\nfunction testFunc() {\n\n    console.log(\'hell yea borter\');\n}\n\n</script>' as const
+            }
+          />
+
           <HeroSection
             data-plasmic-name={"heroSection"}
             data-plasmic-override={overrides.heroSection}
@@ -130,9 +142,10 @@ function PlasmicHomepage__RenderFunc(props: {
 }
 
 const PlasmicDescendants = {
-  about: ["about", "navigation", "bomBomItes", "heroSection"],
+  about: ["about", "navigation", "bomBomItes", "embedHtml", "heroSection"],
   navigation: ["navigation"],
   bomBomItes: ["bomBomItes"],
+  embedHtml: ["embedHtml"],
   heroSection: ["heroSection"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
@@ -142,6 +155,7 @@ type NodeDefaultElementType = {
   about: "div";
   navigation: typeof Navigation;
   bomBomItes: typeof BomBomItes;
+  embedHtml: typeof Embed;
   heroSection: typeof HeroSection;
 };
 
@@ -207,6 +221,7 @@ export const PlasmicHomepage = Object.assign(
     // Helper components rendering sub-elements
     navigation: makeNodeComponent("navigation"),
     bomBomItes: makeNodeComponent("bomBomItes"),
+    embedHtml: makeNodeComponent("embedHtml"),
     heroSection: makeNodeComponent("heroSection"),
 
     // Metadata about props expected for PlasmicHomepage
